@@ -13,7 +13,7 @@ import javax.persistence.Id;
  * @author X
  */
 @Entity
-public class User {
+public class User  {
     @Id
     private String email;
     private String name;

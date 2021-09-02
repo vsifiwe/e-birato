@@ -3,19 +3,25 @@ package com.model;
 public class Product {
     private String id;
     private String productName;
+    private String photo;
     private Long price;
     private String description;
+    private String shoeSize;
 
     public Product() {
     }
 
-    public Product(String id, String productName, Long price, String description) {
+    public Product(String id, String productName, String photo, Long price, String description, String shoeSize) {
         this.id = id;
         this.productName = productName;
+        this.photo = photo;
         this.price = price;
         this.description = description;
+        this.shoeSize = shoeSize;
     }
 
+  
+    
     public String getId() {
         return id;
     }
@@ -47,6 +53,23 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public String getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    public String getShoeSize() {
+        return shoeSize;
+    }
+
+    public void setShoeSize(String shoeSize) {
+        this.shoeSize = shoeSize;
+    }
+    
     
     
 }
